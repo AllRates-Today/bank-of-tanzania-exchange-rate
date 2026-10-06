@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'TZS', { apiKey: 'art_live_...' });
 {
   bank: 'botz',
   name: 'Bank of Tanzania',
-  rate_date: '2026-09-25',   // Bank of Tanzania's own publication date
+  rate_date: '2026-10-06',   // Bank of Tanzania's own publication date
   source: 'USD',
   target: 'TZS',
-  rate: 2645.4486,
+  rate: 2637.2394,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -113,11 +113,11 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'botz',
   name: 'Bank of Tanzania',
-  rate_date: '2026-09-25',
+  rate_date: '2026-10-06',
   rates: [
-    { "base": "USD", "quote": "TZS", "type": "reference", "value": 2645.4486 },
-    { "base": "USD", "quote": "TZS", "type": "sell", "value": 2658.61 },
-    { "base": "USD", "quote": "TZS", "type": "buy", "value": 2632.2871 },
+    { "base": "USD", "quote": "TZS", "type": "reference", "value": 2637.2394 },
+    { "base": "USD", "quote": "TZS", "type": "sell", "value": 2650.36 },
+    { "base": "USD", "quote": "TZS", "type": "buy", "value": 2624.1188 },
     // … the rest of the published table (38 currencies vs TZS)
   ],
   disclaimer: '…'
@@ -157,7 +157,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bank-of-tanzania-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'TZS', from: '2026-01-01', to: '2026-09-25' },
+  { source: 'USD', target: 'TZS', from: '2026-01-01', to: '2026-10-06' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -170,11 +170,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'TZS',
   from: '2026-01-01',
-  to: '2026-09-25',
+  to: '2026-10-06',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-25', rate: 2645.4486, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-10-06', rate: 2637.2394, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
