@@ -1,6 +1,6 @@
 {
   "name": "bank-of-tanzania-exchange-rate",
-  "version": "1.3.6",
+  "version": "1.3.7",
   "description": "Official Bank of Tanzania (Tanzania) daily exchange rates — 38 currencies vs TZS, history since 2010. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "botz",

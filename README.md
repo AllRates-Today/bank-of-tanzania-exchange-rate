@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/bank-of-tanzania-exchange-rate.svg)](https://github.com/AllRates-Today/bank-of-tanzania-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/bank-of-tanzania-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/TZS today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbotz%3Fsource%3DUSD%26target%3DTZS&query=%24.rate&label=USD%2FTZS%20published%20by%20Bank%20of%20Tanzania&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/botz/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbotz%3Fsource%3DUSD%26target%3DTZS&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/botz/)
 
 **Official Bank of Tanzania (Tanzania) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Bank of Tanzania itself prints, every business day.**
 
@@ -32,6 +34,79 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Bank of Tanzania table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-09** by Bank of Tanzania — 113 rates, first 60 shown. Updated 2026-10-09.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AED | TZS | buy | 712.8028 |
+| AED | TZS | reference | 716.3668 |
+| AED | TZS | sell | 719.9309 |
+| AUD | TZS | buy | 1819.6958 |
+| AUD | TZS | reference | 1828.7943 |
+| AUD | TZS | sell | 1837.8928 |
+| BIF | TZS | buy | 0.8688 |
+| BIF | TZS | reference | 0.8732 |
+| BIF | TZS | sell | 0.8775 |
+| BWP | TZS | buy | 200.5593 |
+| BWP | TZS | reference | 201.5621 |
+| BWP | TZS | sell | 202.5649 |
+| CAD | TZS | buy | 1835.1912 |
+| CAD | TZS | reference | 1844.3672 |
+| CAD | TZS | sell | 1853.5431 |
+| CHF | TZS | buy | 3139.4093 |
+| CHF | TZS | reference | 3155.1063 |
+| CHF | TZS | sell | 3170.8034 |
+| CNY | TZS | buy | 390.6404 |
+| CNY | TZS | reference | 392.5936 |
+| CNY | TZS | sell | 394.5468 |
+| DKK | TZS | buy | 391.9269 |
+| DKK | TZS | reference | 393.8865 |
+| DKK | TZS | sell | 395.8461 |
+| DZD | TZS | buy | 19.3666 |
+| DZD | TZS | reference | 19.4634 |
+| DZD | TZS | sell | 19.5603 |
+| EUR | TZS | buy | 2929.8411 |
+| EUR | TZS | reference | 2944.4903 |
+| EUR | TZS | sell | 2959.1396 |
+| GBP | TZS | buy | 3458.993 |
+| GBP | TZS | reference | 3476.2879 |
+| GBP | TZS | sell | 3493.5829 |
+| HKD | TZS | buy | 333.635 |
+| HKD | TZS | reference | 335.3032 |
+| HKD | TZS | sell | 336.9713 |
+| IDR | TZS | buy | 0.1463 |
+| IDR | TZS | reference | 0.147 |
+| IDR | TZS | sell | 0.1477 |
+| INR | TZS | buy | 27.051 |
+| INR | TZS | reference | 27.1863 |
+| INR | TZS | sell | 27.3215 |
+| IQD | TZS | buy | 1.7225 |
+| IQD | TZS | sell | 1.7398 |
+| IRR | TZS | buy | 0.0015 |
+| IRR | TZS | reference | 0.0015 |
+| IRR | TZS | sell | 0.0015 |
+| JPY | TZS | buy | 16.5504 |
+| JPY | TZS | reference | 16.6331 |
+| JPY | TZS | sell | 16.7159 |
+| KES | TZS | buy | 20.1483 |
+| KES | TZS | reference | 20.249 |
+| KES | TZS | sell | 20.3497 |
+| KRW | TZS | buy | 1.9502 |
+| KRW | TZS | reference | 1.96 |
+| KRW | TZS | sell | 1.9698 |
+| KWD | TZS | buy | 8495.3515 |
+| KWD | TZS | reference | 8537.8282 |
+| KWD | TZS | sell | 8580.305 |
+| MWK | TZS | buy | 1.4953 |
+
+[Full table on the Bank of Tanzania rates page](https://allratestoday.com/central-bank-rates-api/botz/) · Source: [Official rates published by BOTZ, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/botz/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
