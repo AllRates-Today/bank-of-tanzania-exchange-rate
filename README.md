@@ -33,79 +33,82 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/botz').th
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
 
 ## 📈 Latest published table
 
 [![Latest Bank of Tanzania table](https://allratestoday.com/api/open/central-bank/botz/table.svg)](https://allratestoday.com/central-bank-rates-api/botz/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-16** by Bank of Tanzania — 114 rates, first 60 shown. Updated 2026-10-16.
+<details>
+<summary>Table as text: published 2026-10-19 by Bank of Tanzania — 114 rates, first 60 shown. Updated 2026-10-19.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | TZS | buy | 713.3382 |
-| AED | TZS | reference | 716.9049 |
-| AED | TZS | sell | 720.4716 |
-| AUD | TZS | buy | 1808.0757 |
-| AUD | TZS | reference | 1817.116 |
-| AUD | TZS | sell | 1826.1564 |
-| BIF | TZS | buy | 0.8702 |
-| BIF | TZS | reference | 0.8745 |
-| BIF | TZS | sell | 0.8789 |
-| BWP | TZS | buy | 201.4795 |
-| BWP | TZS | reference | 202.4869 |
-| BWP | TZS | sell | 203.4943 |
-| CAD | TZS | buy | 1843.3968 |
-| CAD | TZS | reference | 1852.6137 |
-| CAD | TZS | sell | 1861.8307 |
-| CHF | TZS | buy | 3157.7917 |
-| CHF | TZS | reference | 3173.5807 |
-| CHF | TZS | sell | 3189.3697 |
-| CNY | TZS | buy | 391.562 |
-| CNY | TZS | reference | 393.5198 |
-| CNY | TZS | sell | 395.4776 |
-| DKK | TZS | buy | 392.73 |
-| DKK | TZS | reference | 394.6937 |
-| DKK | TZS | sell | 396.6573 |
-| DZD | TZS | buy | 19.414 |
-| DZD | TZS | reference | 19.511 |
-| DZD | TZS | sell | 19.6081 |
-| EUR | TZS | buy | 2935.9942 |
-| EUR | TZS | reference | 2950.6742 |
-| EUR | TZS | sell | 2965.3541 |
-| GBP | TZS | buy | 3470.4782 |
-| GBP | TZS | reference | 3487.8306 |
-| GBP | TZS | sell | 3505.183 |
-| HKD | TZS | buy | 333.8583 |
-| HKD | TZS | reference | 335.5276 |
-| HKD | TZS | sell | 337.1969 |
-| IDR | TZS | buy | 0.1461 |
-| IDR | TZS | reference | 0.1469 |
-| IDR | TZS | sell | 0.1476 |
-| INR | TZS | buy | 27.5603 |
-| INR | TZS | reference | 27.6981 |
-| INR | TZS | sell | 27.8359 |
-| IQD | TZS | buy | 1.7226 |
-| IQD | TZS | reference | 1.7312 |
-| IQD | TZS | sell | 1.7398 |
-| IRR | TZS | buy | 0.0015 |
+| AED | TZS | buy | 713.5226 |
+| AED | TZS | reference | 717.0902 |
+| AED | TZS | sell | 720.6578 |
+| AUD | TZS | buy | 1823.1197 |
+| AUD | TZS | reference | 1832.2353 |
+| AUD | TZS | sell | 1841.3509 |
+| BIF | TZS | buy | 0.8703 |
+| BIF | TZS | reference | 0.8746 |
+| BIF | TZS | sell | 0.879 |
+| BWP | TZS | buy | 202.3068 |
+| BWP | TZS | reference | 203.3183 |
+| BWP | TZS | sell | 204.3299 |
+| CAD | TZS | buy | 1849.6291 |
+| CAD | TZS | reference | 1858.8772 |
+| CAD | TZS | sell | 1868.1254 |
+| CHF | TZS | buy | 3176.4296 |
+| CHF | TZS | reference | 3192.3118 |
+| CHF | TZS | sell | 3208.1939 |
+| CNY | TZS | buy | 391.9231 |
+| CNY | TZS | reference | 393.8827 |
+| CNY | TZS | sell | 395.8423 |
+| DKK | TZS | buy | 394.1572 |
+| DKK | TZS | reference | 396.128 |
+| DKK | TZS | sell | 398.0988 |
+| DZD | TZS | buy | 19.3825 |
+| DZD | TZS | reference | 19.4794 |
+| DZD | TZS | sell | 19.5763 |
+| EUR | TZS | buy | 2946.5514 |
+| EUR | TZS | reference | 2961.2842 |
+| EUR | TZS | sell | 2976.0169 |
+| GBP | TZS | buy | 3494.7714 |
+| GBP | TZS | reference | 3512.2453 |
+| GBP | TZS | sell | 3529.7191 |
+| HKD | TZS | buy | 333.9264 |
+| HKD | TZS | reference | 335.5961 |
+| HKD | TZS | sell | 337.2657 |
+| IDR | TZS | buy | 0.1455 |
+| IDR | TZS | reference | 0.1462 |
+| IDR | TZS | sell | 0.147 |
+| INR | TZS | buy | 27.5935 |
+| INR | TZS | reference | 27.7315 |
+| INR | TZS | sell | 27.8694 |
+| IQD | TZS | buy | 1.7229 |
+| IQD | TZS | reference | 1.7315 |
+| IQD | TZS | sell | 1.7401 |
+| IRR | TZS | buy | 0.0014 |
 | IRR | TZS | reference | 0.0015 |
 | IRR | TZS | sell | 0.0015 |
-| JPY | TZS | buy | 16.5887 |
-| JPY | TZS | reference | 16.6716 |
-| JPY | TZS | sell | 16.7546 |
-| KES | TZS | buy | 20.154 |
-| KES | TZS | reference | 20.2548 |
-| KES | TZS | sell | 20.3555 |
-| KRW | TZS | buy | 1.9468 |
-| KRW | TZS | reference | 1.9565 |
-| KRW | TZS | sell | 1.9662 |
-| KWD | TZS | buy | 8501.0376 |
-| KWD | TZS | reference | 8543.5428 |
-| KWD | TZS | sell | 8586.048 |
+| JPY | TZS | buy | 16.5795 |
+| JPY | TZS | reference | 16.6624 |
+| JPY | TZS | sell | 16.7453 |
+| KES | TZS | buy | 20.1659 |
+| KES | TZS | reference | 20.2667 |
+| KES | TZS | sell | 20.3675 |
+| KRW | TZS | buy | 1.9683 |
+| KRW | TZS | reference | 1.9781 |
+| KRW | TZS | sell | 1.988 |
+| KWD | TZS | buy | 8502.7724 |
+| KWD | TZS | reference | 8545.2863 |
+| KWD | TZS | sell | 8587.8001 |
+
+</details>
 
 [Full table on the Bank of Tanzania rates page](https://allratestoday.com/central-bank-rates-api/botz/) · Source: [Official rates published by BOTZ, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/botz/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -380,7 +383,8 @@ Need the whole archive rather than an API call? The same published tables are mi
 - [All central bank sources](https://allratestoday.com/central-bank-rates-api/)
 - [Package docs on the site](https://allratestoday.com/docs/sdk/bank-of-tanzania-exchange-rate/) · [ERP integration guides](https://allratestoday.com/docs/integrations/)
 - [API documentation](https://allratestoday.com/docs/#central-bank) · [Interactive reference](https://allratestoday.com/api-reference/) · [Methodology](https://allratestoday.com/official-rates-methodology/)
-- [Register (free)](https://allratestoday.com/register) · [Pricing](https://allratestoday.com/pricing/)
+- [Register (Free)](https://allratestoday.com/register) · [Dashboard](https://allratestoday.com/profile) · [Pricing](https://allratestoday.com/pricing/)
+- [Status](https://allratestoday.com/status)
 - [GitHub](https://github.com/AllRates-Today/bank-of-tanzania-exchange-rate)
 
 ## 📜 License
