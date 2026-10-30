@@ -24,93 +24,78 @@
 
 Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
-## ⚡ Try it without a key
-
-The latest Bank of Tanzania table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
-
-```bash
-curl "https://allratestoday.com/api/open/central-bank/botz?source=USD&target=TZS"
-```
-
-```js
-const r = await fetch('https://allratestoday.com/api/open/central-bank/botz').then((x) => x.json());
-console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
-```
-
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
-
 ## 📈 Latest published table
 
 [![Latest Bank of Tanzania table](https://allratestoday.com/api/open/central-bank/botz/table.svg)](https://allratestoday.com/central-bank-rates-api/botz/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-29 by Bank of Tanzania — 114 rates, first 60 shown. Updated 2026-10-29.</summary>
+<summary>Table as text: published 2026-10-30 by Bank of Tanzania — 114 rates, first 60 shown. Updated 2026-10-30.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | TZS | buy | 714.8705 |
-| AED | TZS | reference | 718.4449 |
-| AED | TZS | sell | 722.0192 |
-| AUD | TZS | buy | 1847.0427 |
-| AUD | TZS | reference | 1856.2779 |
-| AUD | TZS | sell | 1865.5132 |
-| BIF | TZS | buy | 0.8704 |
-| BIF | TZS | reference | 0.8748 |
-| BIF | TZS | sell | 0.8791 |
-| BWP | TZS | buy | 200.8511 |
-| BWP | TZS | reference | 201.8554 |
-| BWP | TZS | sell | 202.8596 |
-| CAD | TZS | buy | 1869.352 |
-| CAD | TZS | reference | 1878.6988 |
-| CAD | TZS | sell | 1888.0456 |
-| CHF | TZS | buy | 3162.116 |
-| CHF | TZS | reference | 3177.9266 |
-| CHF | TZS | sell | 3193.7372 |
-| CNY | TZS | buy | 393.8356 |
-| CNY | TZS | reference | 395.8048 |
-| CNY | TZS | sell | 397.7739 |
-| DKK | TZS | buy | 391.0901 |
-| DKK | TZS | reference | 393.0455 |
-| DKK | TZS | sell | 395.001 |
-| DZD | TZS | buy | 19.3066 |
-| DZD | TZS | reference | 19.4031 |
-| DZD | TZS | sell | 19.4997 |
-| EUR | TZS | buy | 2923.4998 |
-| EUR | TZS | reference | 2938.1173 |
-| EUR | TZS | sell | 2952.7348 |
-| GBP | TZS | buy | 3489.2961 |
-| GBP | TZS | reference | 3506.7426 |
-| GBP | TZS | sell | 3524.189 |
-| HKD | TZS | buy | 334.6639 |
-| HKD | TZS | reference | 336.3372 |
-| HKD | TZS | sell | 338.0105 |
-| IDR | TZS | buy | 0.1444 |
-| IDR | TZS | reference | 0.1451 |
-| IDR | TZS | sell | 0.1458 |
-| INR | TZS | buy | 27.5701 |
-| INR | TZS | reference | 27.708 |
-| INR | TZS | sell | 27.8458 |
-| IQD | TZS | buy | 1.7262 |
-| IQD | TZS | reference | 1.7348 |
-| IQD | TZS | sell | 1.7434 |
+| AED | TZS | buy | 715.342 |
+| AED | TZS | reference | 718.9187 |
+| AED | TZS | sell | 722.4954 |
+| AUD | TZS | buy | 1845.8848 |
+| AUD | TZS | reference | 1855.1143 |
+| AUD | TZS | sell | 1864.3437 |
+| BIF | TZS | buy | 0.8721 |
+| BIF | TZS | reference | 0.8765 |
+| BIF | TZS | sell | 0.8809 |
+| BWP | TZS | buy | 201.0109 |
+| BWP | TZS | reference | 202.016 |
+| BWP | TZS | sell | 203.0211 |
+| CAD | TZS | buy | 1876.7188 |
+| CAD | TZS | reference | 1886.1024 |
+| CAD | TZS | sell | 1895.486 |
+| CHF | TZS | buy | 3169.2125 |
+| CHF | TZS | reference | 3185.0585 |
+| CHF | TZS | sell | 3200.9046 |
+| CNY | TZS | buy | 394.4152 |
+| CNY | TZS | reference | 396.3873 |
+| CNY | TZS | sell | 398.3594 |
+| DKK | TZS | buy | 391.0518 |
+| DKK | TZS | reference | 393.007 |
+| DKK | TZS | sell | 394.9623 |
+| DZD | TZS | buy | 19.2932 |
+| DZD | TZS | reference | 19.3896 |
+| DZD | TZS | sell | 19.4861 |
+| EUR | TZS | buy | 2922.9356 |
+| EUR | TZS | reference | 2937.5503 |
+| EUR | TZS | sell | 2952.165 |
+| GBP | TZS | buy | 3499.167 |
+| GBP | TZS | reference | 3516.6628 |
+| GBP | TZS | sell | 3534.1587 |
+| HKD | TZS | buy | 334.8619 |
+| HKD | TZS | reference | 336.5362 |
+| HKD | TZS | sell | 338.2105 |
+| IDR | TZS | buy | 0.1449 |
+| IDR | TZS | reference | 0.1456 |
+| IDR | TZS | sell | 0.1463 |
+| INR | TZS | buy | 27.5805 |
+| INR | TZS | reference | 27.7184 |
+| INR | TZS | sell | 27.8563 |
+| IQD | TZS | buy | 1.7275 |
+| IQD | TZS | reference | 1.7362 |
+| IQD | TZS | sell | 1.7448 |
 | IRR | TZS | buy | 0.0014 |
 | IRR | TZS | reference | 0.0014 |
 | IRR | TZS | sell | 0.0014 |
-| JPY | TZS | buy | 16.6192 |
-| JPY | TZS | reference | 16.7023 |
-| JPY | TZS | sell | 16.7854 |
-| KES | TZS | buy | 20.1807 |
-| KES | TZS | reference | 20.2816 |
-| KES | TZS | sell | 20.3825 |
-| KRW | TZS | buy | 1.958 |
-| KRW | TZS | reference | 1.9678 |
-| KRW | TZS | sell | 1.9776 |
-| KWD | TZS | buy | 8513.3105 |
-| KWD | TZS | reference | 8555.877 |
-| KWD | TZS | sell | 8598.4436 |
+| JPY | TZS | buy | 16.6251 |
+| JPY | TZS | reference | 16.7082 |
+| JPY | TZS | sell | 16.7913 |
+| KES | TZS | buy | 20.1967 |
+| KES | TZS | reference | 20.2977 |
+| KES | TZS | sell | 20.3987 |
+| KRW | TZS | buy | 1.9629 |
+| KRW | TZS | reference | 1.9728 |
+| KRW | TZS | sell | 1.9826 |
+| KWD | TZS | buy | 8522.8481 |
+| KWD | TZS | reference | 8565.4623 |
+| KWD | TZS | sell | 8608.0765 |
 
 </details>
 
