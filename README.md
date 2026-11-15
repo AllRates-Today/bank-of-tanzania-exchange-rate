@@ -31,75 +31,7 @@ Get a free API key at [allratestoday.com/register](https://allratestoday.com/reg
 The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-<details>
-<summary>Table as text: published 2026-11-13 by Bank of Tanzania — 114 rates, first 60 shown. Updated 2026-11-13.</summary>
-
-| Base | Quote | Type | Rate |
-| --- | --- | --- | ---: |
-| AED | TZS | buy | 716.3608 |
-| AED | TZS | reference | 719.9426 |
-| AED | TZS | sell | 723.5244 |
-| AUD | TZS | buy | 1796.6767 |
-| AUD | TZS | reference | 1805.66 |
-| AUD | TZS | sell | 1814.6434 |
-| BIF | TZS | buy | 0.8636 |
-| BIF | TZS | reference | 0.8679 |
-| BIF | TZS | sell | 0.8723 |
-| BWP | TZS | buy | 200.2447 |
-| BWP | TZS | reference | 201.2459 |
-| BWP | TZS | sell | 202.2472 |
-| CAD | TZS | buy | 1849.2773 |
-| CAD | TZS | reference | 1858.5237 |
-| CAD | TZS | sell | 1867.77 |
-| CHF | TZS | buy | 3158.8675 |
-| CHF | TZS | reference | 3174.6618 |
-| CHF | TZS | sell | 3190.4562 |
-| CNY | TZS | buy | 394.4796 |
-| CNY | TZS | reference | 396.452 |
-| CNY | TZS | sell | 398.4244 |
-| DKK | TZS | buy | 390.1976 |
-| DKK | TZS | reference | 392.1486 |
-| DKK | TZS | sell | 394.0996 |
-| DZD | TZS | buy | 19.1367 |
-| DZD | TZS | reference | 19.2324 |
-| DZD | TZS | sell | 19.3281 |
-| EUR | TZS | buy | 2917.3629 |
-| EUR | TZS | reference | 2931.9497 |
-| EUR | TZS | sell | 2946.5366 |
-| GBP | TZS | buy | 3490.7312 |
-| GBP | TZS | reference | 3508.1848 |
-| GBP | TZS | sell | 3525.6385 |
-| HKD | TZS | buy | 335.4286 |
-| HKD | TZS | reference | 337.1057 |
-| HKD | TZS | sell | 338.7829 |
-| IDR | TZS | buy | 0.1443 |
-| IDR | TZS | reference | 0.145 |
-| IDR | TZS | sell | 0.1457 |
-| INR | TZS | buy | 27.9773 |
-| INR | TZS | reference | 28.1172 |
-| INR | TZS | sell | 28.2571 |
-| IQD | TZS | buy | 1.73 |
-| IQD | TZS | reference | 1.7387 |
-| IQD | TZS | sell | 1.7473 |
-| IRR | TZS | buy | 0.0014 |
-| IRR | TZS | reference | 0.0014 |
-| IRR | TZS | sell | 0.0014 |
-| JPY | TZS | buy | 16.4695 |
-| JPY | TZS | reference | 16.5519 |
-| JPY | TZS | sell | 16.6342 |
-| KES | TZS | buy | 20.2255 |
-| KES | TZS | reference | 20.3266 |
-| KES | TZS | sell | 20.4277 |
-| KRW | TZS | buy | 1.9739 |
-| KRW | TZS | reference | 1.9838 |
-| KRW | TZS | sell | 1.9936 |
-| KWD | TZS | buy | 8525.309 |
-| KWD | TZS | reference | 8567.9356 |
-| KWD | TZS | sell | 8610.5621 |
-
-</details>
-
-[Full table on the Bank of Tanzania rates page](https://allratestoday.com/central-bank-rates-api/botz/) · Source: [Official rates published by BOTZ, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/botz/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+_The table is filled in by the daily workflow._
 <!-- daily-table:end -->
 
 ## 📦 Installation
